@@ -1,0 +1,68 @@
+1. Difference between Procedure and Function?
+
+Procedure:
+May or may not return a value.
+Can perform multiple operations (insert, update, delete, select).
+Called using CALL procedure_name().
+
+Function:
+Must return exactly one value.
+Used mainly for calculations and returning results.
+Called inside SQL queries (SELECT function_name();).
+
+2. What is IN/OUT parameter?
+
+IN Parameter: Used to pass a value into a procedure or function.
+OUT Parameter: Used to return a value from a procedure.
+INOUT Parameter: Can both accept input and return output.
+
+3. Can functions return tables?
+
+MySQL: Functions can only return a single value.
+SQL Server: Functions can return tables using Table-Valued Functions (TVF).
+
+4. What is RETURN used for?
+
+RETURN is used inside a function to return the final computed value.
+Example: RETURN yearly_salary;
+
+5. How to call stored procedures?
+CALL procedure_name(parameters);
+
+6. What is the benefit of stored routines?
+
+Reusability of code.
+Improved performance (precompiled).
+Better modularity.
+Increased security (access control).
+
+7. Can procedures have loops?
+
+Yes ✅ Procedures can have:
+LOOP
+WHILE loop
+REPEAT loop
+
+8. Difference between Scalar and Table-Valued Functions?
+
+Scalar Function: Returns a single value (e.g., SUM(), AVG()).
+Table-Valued Function: Returns a table of records (only in SQL Server).
+
+9. What is a Trigger?
+
+A trigger is a special stored procedure that executes automatically when an event (INSERT, UPDATE, DELETE) occurs on a table.
+Example: Audit logging when a row is updated.
+
+10. How to debug stored procedures?
+
+Use PRINT/SELECT statements inside procedures.
+Use logging tables to record intermediate results.
+Use DB-specific debugging tools (e.g., MySQL Workbench debugger).
+
+
+
+
+
+
+
+
